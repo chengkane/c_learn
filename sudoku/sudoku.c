@@ -34,6 +34,9 @@ int main(int argc,char *argv[])
 	for(i=0;i<9*9;)
 		if(isdigit(c=getchar()))
 			data[0][i]=c-'0',i++;
+	*rs=data,n=1;
+	display(rs,n);
+	n--;
 
 	/* init */
 	for(i=0;i<9;i++)
